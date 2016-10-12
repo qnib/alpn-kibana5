@@ -3,7 +3,7 @@
     "name": "kibana5",
     "port": 5601,
     "check": {
-      "script": "nmap 127.0.0.1 -PN -p 5601 | grep open",
+      "script": "/opt/qnib/kibana/5/bin/healthcheck.sh",
       "interval": "5s"
     }
   }
